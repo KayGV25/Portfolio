@@ -71,7 +71,8 @@ a{
 	-webkit-text-fill-color: transparent;
 }
 .social{
-    max-width: 55vw;
+    max-width: 60vw;
+    width: 800px;
 }
 .social-btn{
     width: 9rem;
