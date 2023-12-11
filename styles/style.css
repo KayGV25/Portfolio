@@ -112,7 +112,7 @@ a{
 .ava{
     width: calc(min(400px, 90vw));
     min-height: 400px;
-    background-image: url("/img/375059695_1875638882833703_5796848727418460373_n.jpg");
+    background-image: url("./img/375059695_1875638882833703_5796848727418460373_n.jpg");
     background-position: center;
     background-size: cover;
     box-shadow: 5px 5px 10px black;
