@@ -25,7 +25,7 @@ a{
 }
 
 .dotted-bg{
-    background-image: url("/img/dotgrid_dark.jpg");
+    background-image: url("./img/dotgrid_dark.jpg");
     background-size: 40%;
     background-repeat: repeat;
     background-attachment: fixed;
