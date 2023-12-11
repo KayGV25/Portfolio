@@ -30,7 +30,7 @@ a{
     background-repeat: repeat;
     background-attachment: fixed;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 .main-center{
     width: 60vw;
@@ -75,6 +75,11 @@ a{
     max-width: 60vw;
     width: 800px;
 }
+@media screen and (max-height: 500px) {
+    .social{
+        display: none;
+    }
+}
 .social-btn{
     width: 9rem;
     height: 3.5rem;
@@ -96,8 +101,12 @@ a{
 .Info-container{
     background-color:#040f13;
     width: 100%;
-    height: fit-content;
+    min-height: 100vh;
+    /* height: fit-content; */
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    place-content: center;
 }
 .Info-grid{
     padding: 5vh 3vw;
