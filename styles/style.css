@@ -75,11 +75,6 @@ a{
     max-width: 60vw;
     width: 800px;
 }
-@media screen and (max-height: 500px) {
-    .social{
-        display: none;
-    }
-}
 .social-btn{
     width: 9rem;
     height: 3.5rem;
@@ -105,11 +100,13 @@ a{
     /* height: fit-content; */
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     align-items: center;
     place-content: center;
 }
 .Info-grid{
     padding: 5vh 3vw;
+    padding-bottom: 15px;
     height: calc(minmax(50vw, 100vh));
     gap: 15px;
     display: flex;
@@ -139,7 +136,7 @@ a{
     height: 100%;
 }
 .clock{
-    background-color: rgb(8, 8, 8);
+    background-color: #0D0907;
     display: grid;
     place-items: center;
     padding: 1rem 2rem;
@@ -150,7 +147,7 @@ a{
 }
 .about{
     padding: 1rem 2rem;
-    background-color: rgb(8, 8, 8);
+    background-color: #012622;
 }
 .about > h1{
     font-size: 40pt;
@@ -160,7 +157,7 @@ a{
 }
 .skill{
     padding: 1rem 2rem;
-    background-color: rgb(8, 8, 8);
+    background-color: #0D0907;
 }
 .skill > h1{
     margin-bottom: 1rem;
@@ -170,12 +167,30 @@ a{
     font-size: 16pt;
 }
 .exp{
-    width: calc(min(400px, 90vw));
+    border-radius: 1rem;
+    width: 751px;
     padding: 1rem 2rem;
-    background-color: rgb(8, 8, 8);
+    margin-bottom: 5vh;
+    background-color: #0D0907;
     box-shadow: 2px 2px 5px rgb(238, 238, 238);
 }
 .projects-container{
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-height: 500px) {
+    .social{
+        display: none;
+    }
+}
+@media screen and (max-width: 845px) {
+    .exp{
+        width: 336px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .exp{
+        width: calc(97vw - 30px - 64px);
+    }
 }
