@@ -178,6 +178,10 @@ a{
     display: flex;
     flex-direction: column;
 }
+.project-name{
+    font-size: 25pt;
+    font-weight: bold;
+}
 
 @media screen and (max-height: 500px) {
     .social{
