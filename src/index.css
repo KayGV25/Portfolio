@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    font-size: 18px /* 18px */;
+    line-height: 28px /* 28px */;
+    transition: all ease 500ms;
+}
+body{
+    padding-bottom: 5rem;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+::-webkit-scrollbar {
+    display: none;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+    margin-inline: auto;
+    text-align: right;
+}
