@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 
 export default function Weather(){
-    const weatherAPIKey = env.VITE_WEATHER_API_KEY
-    const weatherAPIBaseURL = env.VITE_WEATHER_API_BASE_URL
+    const weatherAPIKey = import.meta.env.VITE_WEATHER_API_KEY
+    const weatherAPIBaseURL = import.meta.env.VITE_WEATHER_API_BASE_URL
 
     const [weather, setWeather] = useState({
         "location": {
