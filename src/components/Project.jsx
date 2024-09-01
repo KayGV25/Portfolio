@@ -8,11 +8,11 @@ export default function Project({pName, role, description, time, links = []}){
     }
     return(
         <>
-            <div className="px-4 py-4 border-r-2 border-current dark:hover:bg-zinc-800 hover:bg-zinc-100 cursor-pointer rounded-l-sm" onClick={handleOpen}>
+            <div className="px-4 py-4 border-r-2 border-current dark:hover:bg-zinc-800 hover:bg-zinc-100 cursor-pointer rounded-l-sm flex flex-col gap-1" onClick={handleOpen}>
                 <h1 className="text-2xl font-bold text">{pName}</h1>
-                <p>{time}</p>
-                <p>{role}</p>
-                <p>{description}</p>
+                <p className="text-xs">{time}</p>
+                <p className="text-lg font-semibold">{role}</p>
+                <p className="text-sm">{description}</p>
             </div>
             <Dialog open={open} onClose={setOpen} className="relative z-10">
                 <DialogBackdrop
