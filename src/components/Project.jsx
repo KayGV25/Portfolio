@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 
-export default function Project({pName, role, description, time, links = []}){
+export default function Project({pName, role, description, tech, time, links = []}){
     const [open, setOpen] = useState(false)
     function handleOpen(){
         setOpen( prev => !prev)
@@ -12,6 +12,7 @@ export default function Project({pName, role, description, time, links = []}){
                 <h1 className="text-2xl font-bold text">{pName}</h1>
                 <p className="text-xs">{time}</p>
                 <p className="text-lg font-semibold">{role}</p>
+                <p className="text-base font-semibold">Technologies: {tech}</p>
                 <p className="text-sm">{description}</p>
             </div>
             <Dialog open={open} onClose={setOpen} className="relative z-10">

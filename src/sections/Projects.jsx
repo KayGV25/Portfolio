@@ -14,8 +14,8 @@ export default function Projects(){
                     <h1 className="text-4xl font-bold">Projects</h1>
                     {
                         projects.map((project, key) => {
-                            let { pName, role, description, time, links } = project
-                            return <Project pName={pName} role={role} description={description} time={time} links={links} key={key}/>
+                            let { pName, role, description, tech, time, links } = project
+                            return <Project pName={pName} role={role} description={description} tech={tech} time={time} links={links} key={key}/>
                         })
                     }
                 </section>
