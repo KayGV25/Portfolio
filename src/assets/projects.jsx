@@ -1,12 +1,13 @@
 export const projects = [
     {
-        "pName": "Streaming Plateform Backend",
+        "pName": "Streaming Platform Backend",
         "role": "Project Manager, Backend",
         "description": "Backend for a live streaming platform deployed on AWS EC2 and Render, equiped with Nginx RTMP stream, livechat using websocket; account creation, modification, and deletion; secure user data using hash, light defenseagainst XSS and SQL injection using patter recognition.",
         "tech":"Java Spring Boot, Nginx with RTMP, PostgreSQL, Docker",
         "time": "06/2024 - 08/2024",
         "links": ["https://csbu-software-design-be.onrender.com",
         "https://github.com/KayGV25/UIT_BCU_SoftwareDesign",
+        "https://csbu-software-design-be.onrender.com/swagger-ui/index.html#/",
         "https://kaygv25.github.io/CSBU-Software-Design-Back-End-Doc/"]
     },
     {
